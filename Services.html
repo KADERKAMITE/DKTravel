@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKTravel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="images/DKTravel.png">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.services {
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.service {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.service img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin: 10px 0;
+}
+
+.service p {
+    color: #666;
+    text-align: justify;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>DKT</span>ravel</a>
+           
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="index.html">à propos</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-reservation"><i class='bx bxs-plane-take-off'></i></a>
+
+        <div class="responsive-menu"></div>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="images/Assistance.jpg" alt="Assistance Visa">
+                <h3>Assistance Visa</h3>
+                <p>Voyager à l'étranger peut être une expérience passionnante, mais les formalités administratives liées à l'obtention d'un visa peuvent rapidement devenir stressantes et compliquées. Chez DKTravel, nous sommes là pour vous aider à naviguer à travers ces démarches en toute simplicité et tranquillité.</p>
+            </div>
+            <div class="service">
+                <img src="images/hotel-300x300.jpg" alt="Hotel Booking">
+                <h3>Réservation hôtel</h3>
+                <p>Voyager en toute sérénité commence par un hébergement confortable et bien situé. Chez DKTravel, nous nous engageons à vous trouver les meilleurs hôtels pour vos voyages, que ce soit pour des vacances, un voyage d'affaires, ou une escapade de week-end.</p>
+            </div>
+            <div class="service">
+                <img src="images/billets-davions-300x300.jpg" alt="Package Tours">
+                <h3>Vente Billet d'avion</h3>
+                <p>Voyager vers votre destination préférée n’a jamais été aussi simple grâce à DKTravel. Que vous planifiez un voyage d’affaires, des vacances en famille, ou une escapade romantique, nous vous aidons à trouver les meilleurs vols aux meilleurs tarifs.</p>
+            </div>
+            <div class="service">
+                <img src="images/assurance.jpg" alt="Travel Insurance">
+                <h3>Assurance</h3>
+                <p>La tranquillité d'esprit est essentielle pour profiter pleinement de votre voyage. Chez DKTravel, nous vous proposons des solutions d'assurance voyage complètes et adaptées à vos besoins, pour que vous puissiez partir l'esprit léger.</p>
+            </div>
+            <div class="service">
+                <img src="images/pélérinage.jpg" alt="Custom Itineraries">
+                <h3>Pèlerinage et Omra</h3>
+                <p>Le pèlerinage à La Mecque, qu'il s'agisse du Hajj ou de l'Omra, est une expérience spirituelle unique et inoubliable. Chez DKTravel, nous vous accompagnons dans chaque étape de votre voyage sacré, en vous offrant des services complets et personnalisés pour garantir votre confort et votre tranquillité d'esprit.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var toggle_menu = document.querySelector('.responsive-menu');
+        var menu = document.querySelector('.menu');
+        toggle_menu.onclick= function(){
+             toggle_menu.classList.toggle('active');
+             menu.classList.toggle('responsive')
+        }
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <h4>À propos de nous</h4>
+            <p>Nous sommes une agence de voyages dédiée et engagée à offrir les meilleures expériences de vacances à nos clients. Explorez le monde avec nous!</p>
+        </div>
+        <div class="footer-links">
+            <h4>Liens rapides</h4>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="#a-propos">À propos de nous</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contacter</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Email: giedktravel@gmail.com </p>
+            <p>Téléphone: +221 78 711 77 42 / 33 858 79 28</p>
+            <p>Address: Sicap Liberté 2 Villa 1546 jet d'eau à coté de la banque CBAO</p>
+        </div>
+        <div class="footer-social">
+            <h4>Suivez-nous</h4>
+            <a href="https://www.tiktok.com/@dktravel78?refer=creator_embed" target="_blank"><i class='bx bxl-tiktok'></i>TiK toK</a>
+            <a href="https://www.facebook.com/dktravel/?locale=fr_FR" target="_blank"><i class='bx bxl-facebook'></i>FacebooK</a>
+            <a href="https://www.instagram.com/dktravel/?hl=fr" target="_blank"><i class='bx bxl-instagram'></i>Instagram</a>
+        </div>
+    </div>
+    <div>
+    <p class="Kader">&copy;ce site a été réalisé par
+        <a href="mailto:Kaderkamite8@gmail.com?subject=Sujet du message" target="_blank">
+            <span>KKamité</span> 
+        </a>| 
+    </p>
+</div>
+</footer>
+</html>
